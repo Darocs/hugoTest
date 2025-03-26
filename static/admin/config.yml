@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: Darocs/hugoTest
+  branch: main
+  auth_endpoint: https://github.com/login/oauth/authorize
+
+media_folder: "static/images" # Где будут храниться изображения
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
