@@ -24,3 +24,5 @@ Thumbs.db
 
 # Игнорируем файлы, генерируемые при сборке сайта
 hugo_cache/
+
+static/admin/config.yml
